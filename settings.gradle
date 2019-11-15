@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':verticalviewpgaer'
 rootProject.name='LongLibrary'
