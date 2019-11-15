@@ -15,5 +15,12 @@
         android:gravity="center"
         android:background="#cccccc"
         android:text="垂直分页viewpager2" />
+    <TextView
+        android:id="@+id/websocket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#999999"
+        android:text="websocket" />
 
 </LinearLayout>

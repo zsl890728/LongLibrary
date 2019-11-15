@@ -1,8 +1,9 @@
 package com.zhimai.websocket;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.CallSuper;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.CallSuper;
+import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;

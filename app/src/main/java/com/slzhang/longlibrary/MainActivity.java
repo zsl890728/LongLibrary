@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.slzhang.verticalviewpgaer.Viewpager2Activity;
+import com.zhimai.websocket.activity.WebsocketMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.websocket).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, WebsocketMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

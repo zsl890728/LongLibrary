@@ -3,7 +3,7 @@
     package="com.zhimai.websocket">
 
     <application>
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.WebsocketMainActivity"></activity>
     </application>
 
 </manifest>
