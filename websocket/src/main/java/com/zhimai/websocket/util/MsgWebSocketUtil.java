@@ -37,7 +37,7 @@ public class MsgWebSocketUtil {
         return msgWebSocketUtil;
     }
 
-    public void initSocket() {
+    public void initSocket(String websocket_url) {
         //是否开启日志
         RxWebSocketUtil.getInstance().setShowLog(BuildConfig.DEBUG);
 
@@ -58,10 +58,10 @@ public class MsgWebSocketUtil {
 //                .setSSLSocketFactory(yourSSlSocketFactory, yourX509TrustManager) // wss support
                 .build();
         RxWebSocket.setConfig(config);
-        String url = "***********";//这个是socket服务端的连接地址，这里没有搭建服务端，跑起来会出错
-        Log.e(TAG, "开启长连接；；" + url);
+
+        Log.e(TAG, "开启长连接；；" + websocket_url);
 //        RxWebSocket.get(MyApplication.WEBSOCKET_HOST_AND_PORT)
-        RxWebSocket.get(url)
+        RxWebSocket.get(websocket_url)
 //        RxWebSocket.get("ws://qmapp.dev.zmcms.cn:8282")
                 //RxLifecycle : https://github.com/dhhAndroid/RxLifecycle
 //                .compose(RxLifecycle.with(MyApplication.mContext).<WebSocketInfo>bindToLifecycle())//如果需要跟activity生命绑定，防止内存泄漏，可以用这个方法

@@ -1,2 +1,2 @@
-include ':app', ':verticalviewpgaer', ':websocket'
+include ':app', ':verticalviewpgaer', ':websocket', ':speechfilesynthesis'
 rootProject.name='LongLibrary'
