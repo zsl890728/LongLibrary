@@ -2,10 +2,13 @@ package com.slzhang.speechfilesynthesis;
 
 import android.util.Log;
 
+import java.util.List;
+
 public class SpeechUtils {
     private static final String TAG = "--SpeechUtils--";
     private static SpeechUtils speechUtils;
     private int speekTimes=1;
+    private List<String> lsPath;
 
     public static SpeechUtils getInstance() {
         if (speechUtils == null) {
@@ -27,6 +30,17 @@ public class SpeechUtils {
         if(content==null||content.equals("")){
             Log.e(TAG,"content==null");
         }
+        lsPath=VoiceFileManager.getInstance().getVoicePath(content);
         return speechUtils;
     }
+
+    public void play(){
+        PlayManager.getInstance().play(speekTimes, lsPath, new PlayManager.PlayManagerListener() {
+            @Override
+            public void playComplete() {
+
+            }
+        });
+    }
+
 }

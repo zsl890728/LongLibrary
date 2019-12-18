@@ -1,0 +1,2 @@
+数据库
+集成 litepal  因litepal需要在application中初始化，真正项目中 可写在basemodule中，baseapplication中初始化，APP中继承baseapplication

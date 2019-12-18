@@ -1,2 +1,2 @@
-include ':app', ':verticalviewpgaer', ':websocket', ':speechfilesynthesis'
+include ':app', ':verticalviewpgaer', ':websocket', ':speechfilesynthesis', ':sqllitepal', ':downfile', ':myokhttp'
 rootProject.name='LongLibrary'
