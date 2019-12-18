@@ -4,6 +4,10 @@ import android.util.Log;
 
 import java.util.List;
 
+/**
+ * 文字转语音
+ * 工具入口
+ */
 public class SpeechUtils {
     private static final String TAG = "--SpeechUtils--";
     private static SpeechUtils speechUtils;
